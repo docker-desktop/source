@@ -17,8 +17,6 @@ func NewApp() *App {
 // startup is called at application startup
 func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
-
-	// runtime.WindowSetBackgroundColour(a.ctx, 29, 99, 237, 100)
 }
 
 func (a App) domReady(ctx context.Context) {
