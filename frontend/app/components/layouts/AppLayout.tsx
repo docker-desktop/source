@@ -4,7 +4,7 @@ interface AppLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const AppLayout = ({children}: AppLayoutProps) => {
   return (
-    <main className="mt-24 lg:ml-44">
+    <main className="mt-24 p-2 lg:ml-44">
       {children}
     </main>
   )
