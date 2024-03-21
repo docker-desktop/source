@@ -1,23 +1,30 @@
-# README
+# Docker Desktop
 
-## About
+<p align="center">
+  <img src="https://github.com/docker-desktop/source/assets/76966769/16b9b847-abee-4d04-a46c-a68369b92698" width="250">
+</p>
 
-Wails template for Nextjs with app router. For more details [Nextjs-Template](https://github.com/thisisvk-in/wails-template-nextjs-app-router).
+`
+  이 프로젝트의 주요 목표는 기업 환경에서 Docker를 보다 유연하게 활용하기 위한  Desktop Windows 버전을 개발하는 것입니다. 현재 기업에서는 Docker Desktop Window의 라이선스 문제로 인해 해당 솔루션을 사용하지 못하고 있습니다. 이 문제를 해결함으로써 기업은 Docker Desktop Window의 를 라이선스 제약에서 벗어나고, 더욱 효율적으로 활용할 수 있을 것입니다.
+`
 
-## Start
+## Features
 
-To use this template follow below command
+#### 이미지 관리
+- 사용자가 이미지 파일을 업로드하거나 외부 소스에서 가져와 Docker 이미지로 변환할 수 있습니다.
+- 이미지 목록을 시각적으로 확인하고 필요한 이미지를 선택하여 컨테이너로 생성할 수 있습니다.
 
-```bash
-wails init -n "Your Project Name" -t https://github.com/thisisvk-in/wails-template-nextjs-app-router
-```
+#### 컨테이너 관리
+- 이미지로부터 생성된 컨테이너들을 목록으로 확인할 수 있습니다.
+- 각 컨테이너에 대한 상태, 포트 매핑, 리소스 사용량 등의 정보를 제공합니다.
 
-## Live Development
+#### 컨테이너 제어
+- 사용자는 컨테이너를 시작(Start), 정지(Stop), 삭제(Delete)할 수 있습니다.
+- 시작된 컨테이너에 대한 로그 정보를 실시간으로 확인할 수 있습니다.
 
-To run in live development mode, run `wails dev` in the project directory. In another terminal, go into the `frontend`
-directory and run `npm run dev`. The frontend dev server will run on http://localhost:3000. Connect to this in your
-browser and connect to your application.
+#### 이미지 및 컨테이너 검색 및 필터링
+- 이미지와 컨테이너를 효과적으로 검색하고 필터링할 수 있는 기능을 제공합니다.
+- 특정 이미지 또는 컨테이너를 신속하게 찾을 수 있는 검색 기능을 지원합니다.
 
-## Building
-
-To build a redistributable, production mode package, use `wails build`. Static asset directory will be `frontend/dist`.
+## Stack
+Go, Typescript - Nextjs, Tailwind, Redux-Toolkit/Wails
